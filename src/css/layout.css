@@ -227,7 +227,7 @@
 }
 
 .l-section__tel-link {
-  --aspect-tel-button: 650/169;
+  --aspect-tel-button: 650/155;
 
   display: flex;
   justify-content: center;
@@ -239,6 +239,10 @@
   border: 2.5px solid var(--color-grayscale-0);
   border-radius: var(--rounded-l);
   box-shadow: var(--shadow-tel-button);
+}
+
+.l-section__tel-link--large {
+  --aspect-tel-button: 650/169;
 }
 
 .l-section__tel-text {
@@ -253,7 +257,7 @@
   justify-content: center;
   align-items: center;
   inline-size: 100%;
-  gap: calc((44 / 650) * 100%);
+  gap: calc((22 / 650) * 100%);
   margin-block-start: calc((15 / 650) * 100%);
 }
 
@@ -271,9 +275,7 @@
 }
 
 .l-section__tel-number-text {
-  font-family: var(--font-m-plus-rounded);
-  font-weight: var(--font-bold);
-  font-size: min(calc(49 * var(--fluid-ratio-min)), calc(24 * var(--rem-ratio)));
+  inline-size: calc((421 / 650) * 100%);
   color: var(--color-grayscale-0);
   line-height: var(--leading-tight);
 }
@@ -551,5 +553,10 @@
   .l-body {
     inline-size: 375px;
     margin-inline: auto;
+  }
+
+  .l-section__tel-link,
+  .l-footer__tel {
+    pointer-events: none;
   }
 }
