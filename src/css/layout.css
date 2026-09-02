@@ -219,12 +219,19 @@
   border-block-end: 2px solid var(--color-orangescale-200);
 }
 
+.l-flow__list-text-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: min(calc(20*var(--fluid-ratio-min)), 10px);
+  margin-block: calc((15 / 422) * 100%) calc((30/422)*100%);
+}
+
 .l-flow__list-text {
-  margin-block-start: calc((15 / 422) * 100%);
   font-size: min(calc(28 * var(--fluid-ratio-min)), calc(14 * var(--rem-ratio)));
   letter-spacing: var(--tracking-tight);
   line-height: var(--leading-relaxed);
 }
+
 
 .l-flow__list-text-highlight {
   font-weight: var(--font-bold);
