@@ -20,8 +20,8 @@
     <!-- css/js -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Noto+Sans+JP:wght@400;700&display=swap" media="print" onload="this.media = 'all'" />
+    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" media="print" onload="this.media = 'all'" />
     <link href="style.css" rel="stylesheet" />
   </head>
   <body class="l-body js-load">
@@ -31,17 +31,8 @@
 
     <main class="l-main">
       <section class="l-hero">
-        <h2 class="l-hero__heading">お申し込みありがとうございます!</h2>
-        <div class="l-hero__image"><img src="images/staff_dummy.webp" alt="スタッフの名前" width="381" height="291" /></div>
-        <div class="l-hero__comment">
-          <div class="l-hero__comment-inner">
-            <div class="l-hero__comment-name">
-              <p class="l-hero__comment-name-en">momoka_hara</p>
-              <p class="l-hero__comment-name-jp">原 桃香</p>
-            </div>
-            <p class="l-hero__comment-text">お電話でお話しさせていただいた原でございます。先ほどはありがとうございました。今後ともUCSカードをよろしくお願いします！</p>
-          </div>
-        </div>
+        <h2 class="l-hero__heading">お申し込み<br />ありがとうございます!</h2>
+        <div class="l-hero__image"><img src="images/illust_staff.webp" alt="スタッフの名前" width="381" height="291" /></div>
       </section>
 
       <section class="l-flow">
@@ -69,13 +60,17 @@
                   <p class="l-flow__list-heading">お引受査定完了</p>
                   <div class="l-flow__list-text-box">
                     <p class="l-flow__list-text">
-                      ●お申し込みをお引受できる場合朝日生命から以下の書類を郵送するとともに、SMSでも査定結果をお知らせいたしします。<br />
+                      <span class="l-flow__list-text-heading">●お申し込みをお引受できる場合</span><br />
+                      朝日生命から以下の書類を郵送するとともに、SMSでも査定結果をお知らせいたしします。<br />
                       <span class="l-flow__list-text-highlight">
                         ・ご加入内容確認書<br />
                         ・被保険者のしおり
                       </span>
                     </p>
-                    <p class="l-flow__list-text">●お申し込みをお引受できない場合朝日生命から査定結果について記載した通知を郵送いたします。</p>
+                    <p class="l-flow__list-text">
+                      <span class="l-flow__list-text-heading">●お申し込みをお引受できない場合</span><br />
+                      朝日生命から査定結果について記載した通知を郵送いたします。
+                    </p>
                   </div>
                   <p class="l-flow__list-text">
                     お引受査定以降のお問い合わせは朝日生命が担当いたします。<br />
@@ -145,7 +140,6 @@
           </p>
           <p class="l-footer__text">取扱募集人／株式会社フィナンシャル・エージェンシー</p>
         </div>
-        <p class="l-footer__asahi">朝日－無医－2025－035（2025.7.2）</p>
       </div>
       <p class="l-footer__copyright">copyright© UCS Co., Ltd. All rights reserved.</p>
     </footer>
